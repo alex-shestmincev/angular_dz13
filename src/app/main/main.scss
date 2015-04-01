@@ -1,0 +1,93 @@
+body{
+    background-color: #eee;
+}
+
+#cards-container{
+  position: relative;
+  width:100%;
+  height: 400px;
+  margin-top:20px;
+
+}
+
+.card_main{
+  height: 265px;
+  width:100%;
+
+  text-align: center;
+  position:relative;
+}
+
+.card_title{
+  font-size:20px;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  width:100%;
+  padding: 10px;
+}
+
+.card_bottom{
+  width:100%;
+  height: 75px;
+  border:1px solid #000000;
+  text-align: center;
+  position: absolute;
+  bottom:0;
+
+}
+
+.card_tel{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.cards{
+  width:270px;
+  height:340px;
+  border:1px solid #000;
+  position: absolute;
+  background-color: #eee;
+  -webkit-transition: left 4.5s;
+  transition: left 4.5s;
+  top:0;
+  transform: translateX(-50%);
+}
+
+
+.card1{
+  left:5%;
+  z-index:80;
+}
+
+.card2{
+  left:20%;
+  z-index:90;
+}
+
+.card3{
+  left:35%;
+  z-index:99;
+}
+
+.card4{
+  left:50%;
+  z-index:101;
+}
+
+.card5{
+  left:65%;
+  z-index:99;
+}
+
+.card6{
+  left:80%;
+  z-index: 90;
+}
+
+.card7{
+  left:95%;
+  z-index:80;
+}
