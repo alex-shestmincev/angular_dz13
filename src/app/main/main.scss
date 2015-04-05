@@ -49,7 +49,7 @@ body{
   transform: translateY(-50%);
 }
 
-.cards{
+.card{
   width:270px;
   height:340px;
   border:3px solid #1c94c4;
@@ -64,13 +64,13 @@ body{
   border-radius: 15px;
 }
 
-.cards:hover{
+.card:hover{
   width:300px;
   height:380px;
 }
 
 
-.card1{
+.card0{
   left:5%;
   z-index:75;
   -ms-transform: scale(0.5,0.5);
@@ -78,7 +78,7 @@ body{
   transform: scale(0.5,0.5);
 }
 
-.card2{
+.card1{
   left:15%;
   z-index:90;
   -ms-transform: scale(0.7,0.7);
@@ -86,7 +86,7 @@ body{
   transform: scale(0.7,0.7);
 }
 
-.card3{
+.card2{
   left:35%;
   z-index:99;
   /*-ms-transform: scale(0.9,0.9);
@@ -94,12 +94,12 @@ body{
   transform: scale(0.9,0.9);*/
 }
 
-.card4{
+.card3{
   left:50%;
   z-index:101;
 }
 
-.card5{
+.card4{
   left:65%;
   z-index:99;
   /*-ms-transform: scale(0.9,0.9);
@@ -107,7 +107,7 @@ body{
   transform: scale(0.9,0.9);*/
 }
 
-.card6{
+.card5{
   left:71%;
   z-index: 90;
   -ms-transform: scale(0.7,0.7);
@@ -115,7 +115,7 @@ body{
   transform: scale(0.7,0.7);
 }
 
-.card7{
+.card6{
   left:81%;
   z-index:80;
   -ms-transform: scale(0.5,0.5);

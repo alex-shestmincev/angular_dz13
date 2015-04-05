@@ -51,11 +51,8 @@ angular.module('myProject')
       return $scope.cards;
     }
 
-    $scope.selectCard = function(i){
-      console.log($scope.cards[i]);
-      console.log(i);
-
-
+    $scope.openCard = function(card){
+      console.log(card);
     }
 
 
