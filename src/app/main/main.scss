@@ -11,7 +11,7 @@ body{
 }
 
 .card_main{
-  height: 265px;
+  height: 240px;
   width:100%;
 
   text-align: center;
@@ -21,16 +21,21 @@ body{
 .card_title{
   font-size:20px;
   position: absolute;
-  bottom:0;
+  bottom:10%;
   text-align: center;
   width:100%;
   padding: 10px;
 }
 
+.card_photo{
+  margin: 20% auto;
+}
+
 .card_bottom{
   width:100%;
   height: 75px;
-  border:1px solid #000000;
+  border-top:3px solid #1c94c4;
+  background-color: #1c94c4;
   text-align: center;
   position: absolute;
   bottom:0;
@@ -47,29 +52,46 @@ body{
 .cards{
   width:270px;
   height:340px;
-  border:1px solid #000;
+  border:3px solid #1c94c4;
   position: absolute;
   background-color: #eee;
-  -webkit-transition: left 4.5s;
-  transition: left 4.5s;
+  -webkit-transition: left 4.5s, transform 4.5s, -webkit-transform 4.5s, width 1s, height 1s;
+  transition: left 4.5s, transform 4.5s, -webkit-transform 4.5s, width 1s, height 1s;
   top:0;
   transform: translateX(-50%);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.cards:hover{
+  width:300px;
+  height:380px;
 }
 
 
 .card1{
   left:5%;
-  z-index:80;
+  z-index:75;
+  -ms-transform: scale(0.5,0.5);
+  -webkit-transform: scale(0.5,0.5);
+  transform: scale(0.5,0.5);
 }
 
 .card2{
-  left:20%;
+  left:15%;
   z-index:90;
+  -ms-transform: scale(0.7,0.7);
+  -webkit-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
 }
 
 .card3{
   left:35%;
   z-index:99;
+  /*-ms-transform: scale(0.9,0.9);
+  -webkit-transform: scale(0.9,0.9);
+  transform: scale(0.9,0.9);*/
 }
 
 .card4{
@@ -80,14 +102,23 @@ body{
 .card5{
   left:65%;
   z-index:99;
+  /*-ms-transform: scale(0.9,0.9);
+  -webkit-transform: scale(0.9,0.9);
+  transform: scale(0.9,0.9);*/
 }
 
 .card6{
-  left:80%;
+  left:71%;
   z-index: 90;
+  -ms-transform: scale(0.7,0.7);
+  -webkit-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
 }
 
 .card7{
-  left:95%;
+  left:81%;
   z-index:80;
+  -ms-transform: scale(0.5,0.5);
+  -webkit-transform: scale(0.5,0.5);
+  transform: scale(0.5,0.5);
 }

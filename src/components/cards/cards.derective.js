@@ -5,15 +5,19 @@ angular.module('myProject').directive('jbCarousel',function($parse){
 
     controller: function ($scope) {
 
+      setInterval(function(){
+        $scope.items.push($scope.items.shift());
+      },4500);
+
     },
     template: [
-    '<div ng-repeat="item in items track by $index" ng-click="action({item:item})" class="cards card{{item.id}}">',
+    '<div ng-repeat="item in items track by $index" ng-click="action({item:$index})" class="cards card{{item.id}}">',
       '<div class="card_main">',
         '<div class="card_photo">',
           '<img align="absmiddle" ng-src="{{item.image}}"/>',
         '</div>',
         '<div class="card_title">',
-          '{{item.name}}',
+          '<b>{{item.name}}</b>',
         '</div>',
       '</div>',
       '<div class="card_bottom">',
@@ -27,17 +31,7 @@ angular.module('myProject').directive('jbCarousel',function($parse){
     },
     link: function($scope, $element, $attr, mainCtrl){
 
-      setInterval(function(){
 
-        changeID();
-
-      },4500);
-
-      function changeID2(){
-        $scope.items.unshift($scope.items.pop);
-        delete $scope.items[$scope.items.length-1];
-        console.log(1);
-      }
 
       function changeID(){
         var itemsLen = $scope.items.length;
@@ -51,9 +45,9 @@ angular.module('myProject').directive('jbCarousel',function($parse){
             $scope.items[i].id += 1;
           }
           current.addClass('card'+$scope.items[i].id);
-          console.log(i);
+          //console.log(i);
         }
-        setTimeout(0);
+
       }
 
     }
